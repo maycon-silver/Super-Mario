@@ -1,0 +1,302 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: calc(100% - 120px);
+    width: 101%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+}
+
+header a:hover {
+    color: red;
+    transition: 0.5s color ease-in-out;
+    font-size: 24px;
+    transition: 0.5s;
+}
+
+.logo-header {
+    height: 80px;
+}
+
+.caixa-video {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+}
+
+.video-background {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+
+}
+
+.pelicula {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+
+}
+
+.logo-mario {
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+
+
+.sobre-nos {
+    max-width: 43%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.conteiner {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 100px;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+
+button {
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 3px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 30px;
+
+}
+
+button:hover {
+    width: 203px;
+    height: 53px;
+    transition: 0.5s;
+}
+
+.logo-mario-luid {
+    width: 500px;
+}
+
+.whatsapp {
+    width: 70px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.sobre-nos p {
+    color: white;
+    font-size: 20px;
+    text-transform: lowercase;
+}
+
+.formulario {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding: 20px;
+    gap: 20px;
+    top: 30%;
+    left: -300px;
+    border-radius: 5px;
+    transition: left 1s ease-in-out;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline-color: #18d80f;
+}
+
+::placeholder {
+    color: black;
+}
+
+textarea {
+    padding-left: 10px;
+    width: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline-color: #18d80f;
+}
+
+.button-form {
+    margin: 0 auto;
+}
+
+.mascara-formulario {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    transition: visibility 1s ease-in-out;
+}
+
+/* Nossos serviços */
+.background {
+    background-image: url(./assests/mario-luid-servicos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pelicula-servicos {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    z-index: -1;
+}
+
+.embrulho {
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.servicos {
+    margin-left: 10px;
+    width: 50%;
+
+}
+
+.embrulho p {
+    margin-top: 20px;
+    font-size: 28px;
+    color: white;
+}
+
+.embrulho h1 {
+    font-size: 80px;
+    color: white;
+}
+
+.embrulho h2 {
+    font-size: 70px;
+    color: antiquewhite;
+}
+
+#mario {
+    color: red;
+}
+
+#luigi {
+    color: #18d80f;
+}
+
+/* roda pe */
+
+#rodape {
+    background-color: rgb(12, 12, 12);
+    width: 100%;
+    height: 200px;
+
+}
+
+/* Responsividade */
+
+@media(max-width: 900px) {
+    .sobre-nos p {
+        display: none;
+    }
+
+    .logo-header {
+        height: 60px;
+    }
+
+    header {
+        gap: 20px;
+    }
+
+    header a {
+        font-size: 18px;
+        font-weight: 500px;
+
+    }
+
+
+    .conteiner {
+        flex-direction: column;
+    }
+
+    .logo-mario {
+        margin-bottom: 0px;
+    }
+
+    .logo-mario-luid {
+        height: auto;
+        width: 300px;
+        margin-top: 20px;
+    }
+
+    .embrulho {
+        padding: 10px;
+        margin-top: 70px;
+        height: calc(100vh - 100px);
+        width: 100vw;
+        display: inline-block;
+    }
+
+    #rodape {
+        height: 80px;
+    
+    }
+
+    .servicos{
+        width: 100%;
+    }
+
+    .servicos h1 {
+        font-size: 60px;
+        margin: 0 auto;
+        
+    }
+
+    .servicos h2 {
+        font-size: 40px;
+    
+    }
+
+    .embrulho p {
+        margin: 15px;
+        font-size: 18px;
+    }
+
+}
